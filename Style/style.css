@@ -1,0 +1,487 @@
+:root {
+  --sideBar:  rgb(78, 68, 68);
+  --sky:  rgb(103, 177, 223);
+  --cloud: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'minecraf_font1', serif ;
+  padding: 0;
+  margin: 0;
+}
+
+/* Open Page */
+#openPage {
+    font-family: 'minecraf_font2', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("../Assets/Images/page\ 1.png")no-repeat center center/cover;
+    text-align: center;
+  }
+
+p {
+  padding-top: 10%;
+  font-size: 320%;
+  color: #d9d9d9;
+  padding-bottom: 2%;
+}
+
+.openTitle {
+  color: white;
+  font-size: 500%;
+  display: inline-block;
+}
+
+#openTitle {
+  color: #d9d9d9;
+  font-size: 200%;
+  display: inline-block;
+  margin-bottom: 5%;
+}
+#openTitle img {
+  display: inline-block;
+  width: 20%;
+}
+
+#start {
+  padding: 2% 5%;
+  font-family: 'minecraf_font2', sans-serif;
+  font-size: 32px;
+  background-color: lightgray;
+  cursor: pointer;
+  box-shadow: 0 0 0 10px rgb(173, 173, 173);
+}
+
+.footer p {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 7%;
+  color: lightgray;
+}
+
+.footer p span {
+  color: black;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  color: rgb(95, 95, 95);
+  }
+
+#start:hover {
+  background-color: darkgray;
+  box-shadow: 0 0 0 10px rgb(204, 203, 203);
+}
+
+/* Display - Full Screen Game */
+#display {
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: url("../Assets/Images/Open\ Game116.png") no-repeat center center/cover;
+  display: none;
+}
+
+/* Both Sides Bar Containers */
+#leftBarContainer {   
+  width: 12%;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#currentLevel {
+  cursor:default;
+  padding-top: 10px;
+}
+
+/* Left Side Bar - (Levels) */
+#levelTitle {
+  cursor:default;
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 3px;
+  font-weight: lighter;
+  color: lightgray;
+}
+
+#DynamicLevelTitle {
+  cursor:default;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 18%;
+}
+
+#startGame {
+  cursor:default;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  color: lightgray;
+  padding-bottom: 22px;
+}
+
+#fireImg {
+  font-size: 23px;
+}
+
+input {
+  cursor: pointer;
+}
+
+
+label {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: lightgray;
+}
+
+label:hover {
+    font-size: 21px;
+    cursor: pointer;
+    color: white;
+}
+
+.reload {
+  margin-bottom: 13px;
+}
+
+#reloadBtn {
+  font-family: 'Minecraft', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  padding: 7px 9px;
+  padding-bottom: 15px;
+  font-size: 23px;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+#reloadBtn:hover {
+  background-color: black;
+  color: var(--cloud);
+  border: 2px solid var(--cloud);
+  font-size: 27px;
+}
+
+/* Game Board - (Middle Screen) */
+#gameBoard {
+  width: 98%;
+  height: 100%;
+  display: grid;
+}
+
+#coins {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  right: 14%;
+  top: 15%;
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+
+#coins2 {
+  color: white;
+}
+
+.tileDiv {
+  text-align: center;
+  cursor: pointer;
+}
+
+/* check sky color */
+.sky {
+  background-color: var(--sky);
+}
+
+.cloud {
+  background: url(../Assets/Images/cloud3-png.png) no-repeat center center/cover;
+  background-size: 170%;
+}
+
+.bidCloud {
+  background: url(../Assets/Images/cloud.png) no-repeat center center/cover;
+  background-size: 210%;
+  cursor: no-drop;
+}
+
+.ground {
+  background: url(../Assets/Images/Ground.png) no-repeat center center/cover;
+}
+
+.grass {
+  background: url(../Assets/Images/Grass.png) no-repeat center center/cover;
+}
+
+.water {
+  background: url(../Assets/Images/water3.jpg) no-repeat center center/cover;
+}
+
+.trunk {
+  background: url(../Assets/Images/Trunk.jpg) no-repeat center center/cover;
+}
+
+.leaves {
+  background: url(../Assets/Images/Leaves2.jpg) no-repeat center center/cover;
+}
+
+.whites {
+    background: url(../Assets/Images/Whites.jpg) no-repeat center center/cover;
+}
+
+.stone {
+  background: url(../Assets/Images/Stone.jpeg) no-repeat center center/cover;
+}
+
+.diamond {
+    background: url(../Assets/Images/Blue\ Diamond.jfif) no-repeat center center/cover;
+}
+
+.gold {
+    background: url(../Assets/Images/golddd.png) no-repeat center center/cover;
+    background-size: 100%;
+}
+
+.tnt {
+  background: url(../Assets/Images/TNT.jpeg) no-repeat center center/cover;
+}
+.flower {
+    background: url(../Assets/Images/flower.png) no-repeat center center/cover;
+    background-size: 45%;
+}
+
+.yellowflower {
+      background: url(../Assets/Images/YeLLo.png) no-repeat center center/cover;
+}
+
+.mushrooms {
+      background: url(../Assets/Images/3\ mushrooms.png) no-repeat center center/cover;
+      background-size: 50%;
+}
+
+.goodCharacter {
+    background: url(../Assets/Images/good2.png) no-repeat center center/cover;
+      background-size: 80%;
+}
+
+.evilCharacter {
+    background: url(../Assets/Images/evilCharacter.png) no-repeat center center/cover;
+      background-size: 100%;
+}
+
+.goodCharacterFall {
+      background: url(../Assets/Images/goodcharcter\ fall.png) no-repeat center center/cover;
+}
+
+.treasureBox {
+  background: url(../Assets/Images/treasure\ 1.png) no-repeat center center/cover;
+  background-size: 120%;
+}
+
+.fireTrap {
+    background: url(../Assets/Images/Fire.gif) no-repeat center center/cover;
+    background-size: 80%;
+}
+
+.heart {
+      background: url(../Assets/Images/heart.png) no-repeat center center/cover;
+      background-size:65%;
+}
+
+.woods2 {
+    background: url(../Assets/Images/wood3.png) no-repeat center center/cover;
+        background-size: 165%;
+}
+
+.lifeTiles {
+    cursor: no-drop;
+}
+
+/* Right Side Bar - (Tools & Cartridge) */
+#rightBarContainer {
+  width: 10%;
+  height: 100%;
+  padding: 10px 0px 7px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tools img {
+    width: 40%;
+}
+
+.tools {
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools:hover {
+  background-color: #0000ff;
+  border: 3px solid black;
+  z-index: 0;
+}
+
+#pickaxe img {
+  width: 45%;
+}
+
+#shovel {
+  width: 85px;
+}
+
+#sword {
+  width: 120px;
+}
+
+#storageBox {
+  position: relative;
+  cursor: pointer;
+  width: 110px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: url(../Assets/Images/Box\ Storege.jpg) no-repeat center center/cover;
+  background-size: 90%;
+  background-position: 200% 45%;
+}
+
+#storageBox:hover {
+  background-color: rgb(255, 217, 0);
+  border: 3px solid black;
+}
+
+#stepBackImg {
+  border: 0.5px solid black;
+  width: 100px;
+  position: absolute;
+  left: 0.5%;
+  top: 0.5%;
+}
+
+#stepBack {
+  color: lightgray;
+  position: absolute;
+  right: 25%;
+  top: 76%;
+  font-size: 18px;
+}
+
+#stepBackText {
+  font-weight: bold;
+  color: black;
+  position: absolute;
+    right: 53%;
+  top: 65%;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 0ch;
+  line-height: 10px;
+}
+
+#archery img {
+  position: relative;
+  width: 65px;
+}
+
+#archfire {
+position: absolute;
+size: 200px;
+height: 40%;
+bottom: 0;
+}
+
+.tools .side {
+  z-index: 1;
+  position: absolute;
+  left: 10%;
+  bottom: 2%;
+  width: 30%;
+  height: 36%;
+}
+
+#side1 {
+  left: 10%;
+  bottom: 2%;
+}
+
+#side2 {
+  left: 0%;
+  bottom: 2%;
+  height: 42%;
+}
+
+#side3 {
+  left: 4%;
+  bottom: 2%;
+  width: 25%;
+  height: 35%;
+}
+
+#side4 {
+  left: -4%;
+  top: 277%;
+  width: 47%;
+  height: 56%;
+}
+
+#side5 {
+  left: 2%;
+  bottom: 33%;
+  width: 28%;
+  height: 28%;
+}
+
+#side6 {
+  left: -6%;
+  top: 120%;
+  width: 28%;
+  height: 28%;
+}
+
+#side7 {
+  left: -6%;
+  top: 150%;
+  width: 28%;
+  height: 28%;
+}
+
+#side8 {
+  width: 28%;
+  height: 28%;
+    left: 3%;
+  bottom: 2%;
+}

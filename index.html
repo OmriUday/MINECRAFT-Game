@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+  <link rel="shortcut icon" type="image" href="./Assets/Icons/Minecraft Icon.jfif">
+  <link rel="stylesheet" href="../Style/fonts.css">
+  <link rel="stylesheet" href="./Style/style.css">
+  <title>M I N E C R A F T</title>
+</head>
+
+<body>
+  <div id="openPage">
+  <div>
+    <p>WELCOME <span>to</span></p>
+    <h1 class="openTitle">M I N E C R A F T</h1>
+    <h2 id="openTitle">W O R L D <img src="../Assets/Images/Fire-PNG-Gif-Transparent-Fire-GifPNG-Images-PlusPNG.gif"></h2>
+    <br>
+    <button id="start">START</button>
+  </div>
+  <div class="footer">
+    <p>Created <span>by</span> Omri Uday. © 2021</p>
+  </div>
+  </div>
+  <div id="display">
+    <!-- Left Bar (Levels) -->
+    <div id="leftBarContainer">
+      <div id="currentLevel">
+        <h2 id="levelTitle">Level :</h2>
+        <h5 id="DynamicLevelTitle">Normal</h5>
+      </div>
+      <h2 id="startGame">Start New Game</h2>
+      <label>BEGINNER <input type="radio" name="level" value="BEGINNER"></label><br>
+      <label>EASY <input type="radio" name="level" value="EASY"></label><br>
+      <label>NORMAL <input type="radio" checked name="level" value="NORMAL"></label><br>
+      <label>HARD <input type="radio" name="level" value="HARD"></label><br>
+      <label>EXPERT<span id="fireImg">&#128293 </span><input type="radio" name="level" value="EXPERT"></label><br>
+      <div class="reload"><button id="reloadBtn">RELOAD</button></div>
+    </div>
+    <!-- Game Board -->
+    <div id="gameBoard"></div> <!-- | Here - Injection from Js | -->
+    <!-- Right Bar (Tools) -->
+    <div id="rightBarContainer">
+      <span class="coinsDisplay" id="coins">0<span class="coinsDisplay" id="coins2">/100</span></span>
+      <div class="tools" id="axe"><img src="./Assets/Images/1.png"><img class="side" id="side1" id="side1" src="./Assets/Images/Trunk.jpg"></div>
+      <div class="tools" id="bucket"><img src="./Assets/Images/bucket.png"><img class="side" id="side2" src="./Assets/Images/water3.jpg"><img class="side" id="side4" src="./Assets/Images/cloud3-png.png"></div>
+      <div class="tools" id="sword"><img src="./Assets/Images/3.png"><img class="side" id="side3" src="./Assets/Images/Leaves2.jpg"></div>
+      <div class="tools" id="archery"><img src="./Assets/Images/archery.png"><img id="archfire" src="./Assets/Images/arechfire.png"><p></p></div>
+      <div class="tools" id="shovel"><img src="./Assets/Images/4.png"><img class="side" id="side5" src="./Assets/Images/Blue Diamond.jfif"><img class="side" id="side6" src="./Assets/Images/Grass.png"><img class="side" id="side7" src="./Assets/Images/Ground.png"><img class="side" id="side8"
+        src="./Assets/Images/golddd.png"></div>
+      <div class="tools" id="pickaxe"><img src="./Assets/Images/2.png"></div>
+      <!-- Right Bar (Storage Box) -->
+      <div id="storageBox"><img style="width: 56px; height: 57px;" id="stepBackImg"
+          src="./Assets/Images/James Harden.jfif">
+        <div id="stepBack"><b>Step Back</b></div>
+        <div id="stepBackText"><b>James</b></div><!-- | Here - Injection from Js | -->
+      </div>
+      <script src="./Scripts/game.js"></script>
+</body>
+
+</html>
